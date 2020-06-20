@@ -1,0 +1,9 @@
+---
+name: Password
+main: xtakumatutix\passwd\Main
+version: 1.0.0
+api: 3.13.0
+commands:
+  passwd:
+    description: パスワード
+...
