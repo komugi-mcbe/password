@@ -1,0 +1,8 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/komugi-mcbe/password
+build-by-default: true
+branches:
+- master
+projects:
+  password:
+    path: ""
+...
