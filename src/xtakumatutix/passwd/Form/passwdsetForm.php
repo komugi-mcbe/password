@@ -32,7 +32,7 @@ Class passwdsetForm implements Form
         }
 
         if ($data[0] == $data[1]){
-            $config->set($player->getName(), $data[0]);
+            $config->set($player->getName(), password_hash($data[0],PASSWORD_DEFAULT));
             $config->save();
             $player->sendMessage(' §a>> §fパスワードを保存しました！「'.$data[0].'」');
         }else{

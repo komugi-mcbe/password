@@ -22,7 +22,7 @@ Class passwdForm implements Form
         }
         $config = $this->Main->pass;
         $pass = $config->get($player->getName());
-        if ($data[0] == $pass){
+        if (password_verify($data[0], $pass)){
             $player->sendMessage(' §a>> 認証完了');
             return;
         }else{
